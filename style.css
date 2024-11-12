@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+canvas {
+    border: 1px solid gray;
+    background-color: white;
+    overflow: scroll;
+    display: none;
+}
+
+#buttons{
+    height: 200px;
+    width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button > span{
+    transition: 0.25s ease;
+}
+
+#setup{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#setup > button, #setup > input{
+    width: 35%;
+    height: 10%;
+    margin: 0;
+    font-size: 2rem;
+}
+
+#draw{
+    display: none;
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="style.css">;
+  </head>
+  <body>
+
+    <div id="setup">
+        <p>Ilosc kwadratow i prob powinna byc podobna</p><br/>
+        Kwadraty:<input type="number" id="holes" placeholder=""><br/>
+        Proby:<input type="text" id="guesses"><br/>
+        <button onclick="start_game()">Wyslij</button>
+    </div>
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div id="buttons">
+        <button type="button" class="button"></button>
+        <button type="button" class="button"></button>
+        <button type="button" class="button"></button>
+        <button type="button" class="button"></button>
+        <button type="button" class="button"></button>
+        <button type="button" class="button"></button>
+        <button type="button" class="button"></button>
+        <button type="button" class="button"></button>
+        <button type="button" onclick="fix()" style="font-size: 1.5rem;"><span>popraw</span></button>
+        <button id="draw" type="button" onclick="draw()" style="font-size: 1.5rem;"><span>Wylosuj</span></button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
